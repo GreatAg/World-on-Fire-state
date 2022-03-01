@@ -5,14 +5,12 @@ from pyrogram import Filters
 from tenacity import retry, wait_fixed, stop_after_attempt
 import wof_db
 
-TOKEN = '1881355037:AAG8ttFhTeQzCm_cyjqD-bZ_Yf5DwTQMCj8'
+TOKEN = ''
 
-##test token : 1858625868:AAHxsfbOYTux-gSCWTDg2sDRWiTq8gmmykE
-# main bot : 1881355037:AAG8ttFhTeQzCm_cyjqD-bZ_Yf5DwTQMCj8
 
 bot = telebot.TeleBot(token=TOKEN, num_threads=10)
 
-creators = [1686875746, 638994540,134933697]
+creators = []
 
 achv = '''🛡  ۵ دفـاع مـوفـق 
 ⟮ 1000 XP ⟯
@@ -1356,9 +1354,9 @@ def poll():
     if __name__ == "__main__":
         try:
             bot.polling(none_stop=True, timeout=234)
-            bot.send_message(134933697, 'wof state is up')
+            bot.send_message(, 'wof state is up')
         except Exception as e:
-            bot.send_message(chat_id=134933697, text=e)
+            bot.send_message(chat_id=, text=e)
             raise e
 
 
