@@ -1,7 +1,7 @@
 import psycopg2
 from collections import Counter
 
-con = psycopg2.connect(host="localhost", database="wof", user="postgres", password="A09140903378")
+con = psycopg2.connect(host="", database="", user="", password="=")
 
 
 def recording_info(user_id, name, username, password):
